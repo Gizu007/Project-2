@@ -1,0 +1,30 @@
+<div>
+  <div class="container">
+    <nav class="nav">
+      <ul>
+        <a class="nav__link" routerLink="/user">My Profile</a>
+        <a class="nav__link" routerLink="/users">All Profiles</a>
+        <a class="nav__link" routerLink="/login">Login</a>
+        <a class="nav__link" routerLink="/login">Logout</a>
+      </ul>
+    </nav>
+    <div class="table table-bordered table-striped">
+      <div>
+      <div class="userHeading">
+        <p class="user__detailHeading">ID</p>
+        <p class="user__detailHeading">USERNAME</p>
+        <p class="user__detailHeading">PASSWORD</p>
+        <p class="user__detailHeading">ETH ADDRESS</p>
+      </div>
+      </div>
+      <div>
+      <div class="user" *ngFor="let alluser of allusers">
+        <p class="user__detail">{{alluser.id}}</p>
+        <p class="user__detail">{{alluser.username}}</p>
+        <p class="user__detail">{{alluser.password}}</p>
+        <p class="user__detail">{{alluser.ethAddress}}</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
