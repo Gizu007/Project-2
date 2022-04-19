@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="userCard">
+  <mat-card class="userProfile mat-elevation-z12">
+    <mat-card-header class="userProfile__header">
+      <img mat-card-avatar src="{{ fakeImage }}" />
+
+      <mat-card-title>Welcome {{ username }}</mat-card-title>
+      <mat-card-subtitle>Date : {{ myDate }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <img
+        mat-card-image
+        class="userProfile__image"
+        src="{{ fakeImage }}"
+        mat-card-image
+      />
+
+      <p class="userProfile__detail">Id : {{ id }}</p>
+      <p class="userProfile__detail">Username : {{ username }}</p>
+    </mat-card-content>
+
+    <mat-card-footer>
+      <mat-card-actions>
+        <mat-icon class="userProfile__icons">thumb_up</mat-icon>
+        <mat-icon class="userProfile__icons">share</mat-icon>
+      </mat-card-actions>
+    </mat-card-footer>
+  </mat-card>
+</div>
+
+<app-footer></app-footer>

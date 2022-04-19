@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "nps_nfts")
-@NoArgsConstructor @Getter @Setter @ToString @EqualsAndHashCode
+@NoArgsConstructor @Getter @Setter @ToString @EqualsAndHashCode @AllArgsConstructor
 public class NFT {
 
     @Id
@@ -28,12 +28,14 @@ public class NFT {
     private String tokenId;
 
     @Column(name = "nft_owner")
-    private String owner;
+    private Long owner;
 
     @Column(name = "nft_token_uri")
     private String tokenUri;
 
+    @JoinColumn(name = "nps_image")
     @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Image image;
 
 }

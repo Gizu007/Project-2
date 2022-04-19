@@ -1,0 +1,27 @@
+.allUserCard{
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+
+ }
+
+ .allUserProfile{
+  width:26%;
+  padding:2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+ }
+
+ .allUserProfile__header{
+  margin-bottom:8%;
+  margin-top: 8%;
+ }
+
+
+
+
+
+
